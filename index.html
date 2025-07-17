@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricardo Miniaturas</title>
     <link href="style.css" rel="stylesheet">
+    <script src="src/carJson.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -37,33 +39,27 @@
             </svg>
         </div>
     </section>
+
     <main>
         <div class="collection-header">
             <h2>Coleção Premium</h2>
             <p>Cada modelo é cuidadosamente selecionado por sua autenticidade, qualidade artesanal e atenção aos
                 detalhes. Explore nosso extenso catálogo de lendas automotivas.</p>
         </div>
-        <section class="collection">
-            <div class="card" onclick="viewDetails('Ferrari F40')">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                        alt="Ferrari F40">
-                    <div class="badge">Limited Edition</div>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Ferrari F40</h3>
-                    <p class="card-subtitle">Ferrari • 1987</p>
-                    <div class="card-footer">
-                        <span class="price">$89.99</span>
-                        <button class="btn" onclick="event.stopPropagation(); viewDetails('Ferrari F40')">
-                            View Details
-                        </button>
-                    </div>
-                </div>
-            </div>
 
+        <!-- O container dos cards agora usa a classe "cards-container" do seu CSS -->
+        <section class="cards-container" id="collection-container">
+            <!-- Os cards serão inseridos aqui dinamicamente pelo JavaScript -->
         </section>
+
+        <div id="imageModal" class="modal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+        </div>
+
     </main>
+
 </body>
 
-</html>
+</html>```
