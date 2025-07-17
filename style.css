@@ -203,8 +203,8 @@ section {
     gap: 30px;
     max-width: 1200px;
     width: 100%;
-    padding: 20px; 
-    margin: 0 auto; 
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .modal {
@@ -226,7 +226,7 @@ section {
 
 .modal-content {
     display: block;
-    margin: 0; 
+    margin: 0;
     max-width: 90%;
     max-height: 80vh;
     width: auto;
@@ -240,6 +240,7 @@ section {
         transform: scale(0.5);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
@@ -247,7 +248,7 @@ section {
 }
 
 #modalCaption {
-    margin-top: 15px; 
+    margin-top: 15px;
     text-align: center;
     color: #ccc;
     font-size: 1.2rem;
