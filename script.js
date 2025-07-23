@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function viewDetails(carName) {
-    alert(`Exibindo detalhes para: ${carName}`);
+    const url = `https://wa.me/5521xxxxxxx?text=Vi suas miniaturas no site e gostaria de saber mais!`;
+    window.open(url, "_blank");
   }
 
   function loadCollection() {
