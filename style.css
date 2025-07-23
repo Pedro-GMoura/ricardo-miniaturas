@@ -62,7 +62,7 @@ body {
 }
 
 .hero-description {
-    font-size: clamp(1rem, 2.5vw, 1.6rem);
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
     color: var(--text-secondary);
     max-width: 50rem;
     line-height: 1.8;
@@ -141,6 +141,12 @@ body {
 
 .card:hover .card-image img {
     transform: scale(1.1);
+}
+
+.price{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: red;
 }
 
 .card-badge {
