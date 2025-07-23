@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-section {
+section.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,4 +270,94 @@ section {
 .modal-close:focus {
     color: #bbb;
     text-decoration: none;
+}
+
+
+footer {
+    color: #cbd5e1;
+    background-color: #0F172A;
+    padding: 4rem 2rem; /* Espaçamento interno */
+    
+    /* A MÁGICA ACONTECE AQUI */
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center;    /* Centraliza TUDO horizontalmente */
+    text-align: center;     /* Garante que o texto dentro dos itens também se centralize */
+}
+
+/* 2. Um container para as colunas, também flexível */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;      /* Permite que as colunas quebrem em telas pequenas */
+    justify-content: center; /* Centraliza as colunas como um grupo */
+    align-items: flex-start; /* Alinha o topo das colunas */
+    gap: 4rem;            /* Espaço entre as colunas */
+    width: 100%;          /* Ocupa a largura disponível */
+    max-width: 1200px;    /* Limita a largura máxima */
+}
+
+/* 3. Estilos básicos para as colunas e seus conteúdos */
+.footer-column {
+    /* Não precisa de regras de tamanho complexas */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Garante que o logo e o texto fiquem centralizados */
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+.footer-logo svg {
+    color: #4285f4;
+}
+
+.footer-about p {
+    color: #94a3b8;
+    line-height: 1.7;
+    max-width: 350px; /* Limita a largura do parágrafo para não ficar muito longo */
+}
+
+.footer-column h4 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    gap: 1.5rem; /* Aumenta o espaço entre os ícones */
+}
+
+.social-icons a {
+    color: #94a3b8;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.social-icons svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* 4. A linha de direitos autorais na parte inferior */
+.footer-bottom {
+    width: 100%;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: 1px solid #1e293b;
+    font-size: 0.85rem;
+    color: #64748b;
 }
